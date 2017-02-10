@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7504A4A1E4D117D0013A5F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7504A491E4D117D0013A5F0 /* Constants.swift */; };
+		F7504A761E4D1DAF0013A5F0 /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7504A751E4D1DAF0013A5F0 /* KeyPair.swift */; };
+		F7504A7E1E4D21D60013A5F0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7504A7D1E4D21D60013A5F0 /* main.swift */; };
+		F7D0A59D1E4D3DD400BF62B2 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0A59C1E4D3DD400BF62B2 /* Keychain.swift */; };
+		F7D0A59F1E4D4E5B00BF62B2 /* EC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0A59E1E4D4E5A00BF62B2 /* EC.swift */; };
+		F7D0A5A11E4E319A00BF62B2 /* P256.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0A5A01E4E319A00BF62B2 /* P256.swift */; };
+		F7D0A5A41E4E362200BF62B2 /* P256Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0A5A31E4E362200BF62B2 /* P256Tests.swift */; };
+		F7D0A5A61E4E367A00BF62B2 /* SwiftKeysTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0A5A51E4E367A00BF62B2 /* SwiftKeysTestCase.swift */; };
 		F7D468981E4CE721005F2494 /* SwiftKeys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D4688E1E4CE721005F2494 /* SwiftKeys.framework */; };
-		F7D4689D1E4CE721005F2494 /* SwiftKeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4689C1E4CE721005F2494 /* SwiftKeysTests.swift */; };
 		F7D4689F1E4CE721005F2494 /* SwiftKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = F7D468911E4CE721005F2494 /* SwiftKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7D468AA1E4CE867005F2494 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D468A91E4CE867005F2494 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,16 +30,44 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F7504A791E4D21D60013A5F0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F7504A491E4D117D0013A5F0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F7504A751E4D1DAF0013A5F0 /* KeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
+		F7504A7B1E4D21D60013A5F0 /* GenerateConstants */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GenerateConstants; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7504A7D1E4D21D60013A5F0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F7D0A59C1E4D3DD400BF62B2 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		F7D0A59E1E4D4E5A00BF62B2 /* EC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EC.swift; sourceTree = "<group>"; };
+		F7D0A5A01E4E319A00BF62B2 /* P256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P256.swift; sourceTree = "<group>"; };
+		F7D0A5A31E4E362200BF62B2 /* P256Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P256Tests.swift; sourceTree = "<group>"; };
+		F7D0A5A51E4E367A00BF62B2 /* SwiftKeysTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftKeysTestCase.swift; sourceTree = "<group>"; };
 		F7D4688E1E4CE721005F2494 /* SwiftKeys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKeys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D468911E4CE721005F2494 /* SwiftKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftKeys.h; sourceTree = "<group>"; };
 		F7D468921E4CE721005F2494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7D468971E4CE721005F2494 /* SwiftKeysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftKeysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7D4689C1E4CE721005F2494 /* SwiftKeysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftKeysTests.swift; sourceTree = "<group>"; };
 		F7D4689E1E4CE721005F2494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D468A91E4CE867005F2494 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F7504A781E4D21D60013A5F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7D4688A1E4CE721005F2494 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,12 +86,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7504A7C1E4D21D60013A5F0 /* GenerateConstants */ = {
+			isa = PBXGroup;
+			children = (
+				F7504A7D1E4D21D60013A5F0 /* main.swift */,
+			);
+			path = GenerateConstants;
+			sourceTree = "<group>";
+		};
+		F7D0A5BB1E4E3E5800BF62B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F7D468841E4CE721005F2494 = {
 			isa = PBXGroup;
 			children = (
 				F7D468901E4CE721005F2494 /* SwiftKeys */,
 				F7D4689B1E4CE721005F2494 /* SwiftKeysTests */,
+				F7504A7C1E4D21D60013A5F0 /* GenerateConstants */,
 				F7D4688F1E4CE721005F2494 /* Products */,
+				F7D0A5BB1E4E3E5800BF62B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +117,7 @@
 			children = (
 				F7D4688E1E4CE721005F2494 /* SwiftKeys.framework */,
 				F7D468971E4CE721005F2494 /* SwiftKeysTests.xctest */,
+				F7504A7B1E4D21D60013A5F0 /* GenerateConstants */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +125,12 @@
 		F7D468901E4CE721005F2494 /* SwiftKeys */ = {
 			isa = PBXGroup;
 			children = (
+				F7504A751E4D1DAF0013A5F0 /* KeyPair.swift */,
+				F7D0A59E1E4D4E5A00BF62B2 /* EC.swift */,
+				F7D0A5A01E4E319A00BF62B2 /* P256.swift */,
+				F7504A491E4D117D0013A5F0 /* Constants.swift */,
+				F7D468A91E4CE867005F2494 /* Utils.swift */,
+				F7D0A59C1E4D3DD400BF62B2 /* Keychain.swift */,
 				F7D468911E4CE721005F2494 /* SwiftKeys.h */,
 				F7D468921E4CE721005F2494 /* Info.plist */,
 			);
@@ -80,8 +140,9 @@
 		F7D4689B1E4CE721005F2494 /* SwiftKeysTests */ = {
 			isa = PBXGroup;
 			children = (
-				F7D4689C1E4CE721005F2494 /* SwiftKeysTests.swift */,
 				F7D4689E1E4CE721005F2494 /* Info.plist */,
+				F7D0A5A31E4E362200BF62B2 /* P256Tests.swift */,
+				F7D0A5A51E4E367A00BF62B2 /* SwiftKeysTestCase.swift */,
 			);
 			path = SwiftKeysTests;
 			sourceTree = "<group>";
@@ -100,6 +161,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		F7504A7A1E4D21D60013A5F0 /* GenerateConstants */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7504A7F1E4D21D60013A5F0 /* Build configuration list for PBXNativeTarget "GenerateConstants" */;
+			buildPhases = (
+				F7504A771E4D21D60013A5F0 /* Sources */,
+				F7504A781E4D21D60013A5F0 /* Frameworks */,
+				F7504A791E4D21D60013A5F0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenerateConstants;
+			productName = GenerateConstants;
+			productReference = F7504A7B1E4D21D60013A5F0 /* GenerateConstants */;
+			productType = "com.apple.product-type.tool";
+		};
 		F7D4688D1E4CE721005F2494 /* SwiftKeys */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7D468A21E4CE721005F2494 /* Build configuration list for PBXNativeTarget "SwiftKeys" */;
@@ -146,12 +224,20 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = GitHub;
 				TargetAttributes = {
+					F7504A7A1E4D21D60013A5F0 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 					F7D4688D1E4CE721005F2494 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = S93FDAQ29M;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					F7D468961E4CE721005F2494 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = S93FDAQ29M;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -162,6 +248,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = F7D468841E4CE721005F2494;
 			productRefGroup = F7D4688F1E4CE721005F2494 /* Products */;
@@ -170,6 +257,7 @@
 			targets = (
 				F7D4688D1E4CE721005F2494 /* SwiftKeys */,
 				F7D468961E4CE721005F2494 /* SwiftKeysTests */,
+				F7504A7A1E4D21D60013A5F0 /* GenerateConstants */,
 			);
 		};
 /* End PBXProject section */
@@ -192,10 +280,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F7504A771E4D21D60013A5F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7504A7E1E4D21D60013A5F0 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7D468891E4CE721005F2494 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D0A5A11E4E319A00BF62B2 /* P256.swift in Sources */,
+				F7504A761E4D1DAF0013A5F0 /* KeyPair.swift in Sources */,
+				F7D0A59D1E4D3DD400BF62B2 /* Keychain.swift in Sources */,
+				F7D468AA1E4CE867005F2494 /* Utils.swift in Sources */,
+				F7D0A59F1E4D4E5B00BF62B2 /* EC.swift in Sources */,
+				F7504A4A1E4D117D0013A5F0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +305,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7D4689D1E4CE721005F2494 /* SwiftKeysTests.swift in Sources */,
+				F7D0A5A41E4E362200BF62B2 /* P256Tests.swift in Sources */,
+				F7D0A5A61E4E367A00BF62B2 /* SwiftKeysTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +321,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F7504A801E4D21D60013A5F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F7504A811E4D21D60013A5F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		F7D468A01E4CE721005F2494 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -317,9 +436,11 @@
 		F7D468A31E4CE721005F2494 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S93FDAQ29M;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -330,6 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.SwiftKeys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -337,9 +459,11 @@
 		F7D468A41E4CE721005F2494 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S93FDAQ29M;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -357,11 +481,16 @@
 		F7D468A61E4CE721005F2494 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S93FDAQ29M;
 				INFOPLIST_FILE = SwiftKeysTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.SwiftKeysTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -369,7 +498,11 @@
 		F7D468A71E4CE721005F2494 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S93FDAQ29M;
 				INFOPLIST_FILE = SwiftKeysTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.SwiftKeysTests;
@@ -381,6 +514,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F7504A7F1E4D21D60013A5F0 /* Build configuration list for PBXNativeTarget "GenerateConstants" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7504A801E4D21D60013A5F0 /* Debug */,
+				F7504A811E4D21D60013A5F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F7D468881E4CE721005F2494 /* Build configuration list for PBXProject "SwiftKeys" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -397,6 +539,7 @@
 				F7D468A41E4CE721005F2494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7D468A51E4CE721005F2494 /* Build configuration list for PBXNativeTarget "SwiftKeysTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +548,7 @@
 				F7D468A71E4CE721005F2494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
