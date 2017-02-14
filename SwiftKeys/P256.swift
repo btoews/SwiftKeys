@@ -8,18 +8,8 @@
 
 import Foundation
 
-public class P256: EC, KeyPair {
-    public static let keySize = 256
-    
-    public let keychain: Keychain
-    public let applicationLabel: Data
-    public let privateKey: SecKey
-    public let publicKey: SecKey
-    
-    required public init(applicationLabel: Data, privateKey: SecKey, publicKey: SecKey, keychain: Keychain) {
-        self.applicationLabel = applicationLabel
-        self.privateKey = privateKey
-        self.publicKey = publicKey
-        self.keychain = keychain
+public class P256: KeyPair {
+    public convenience init?(protection: SecAttrAccessible, isPermanent: Bool = true, keychain: Keychain = Keychain.shared) {
+        self.init(size: 256, protection: protection, keychain: keychain)
     }
 }

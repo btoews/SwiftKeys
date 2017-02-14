@@ -10,23 +10,27 @@
 		F7504A4A1E4D117D0013A5F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7504A491E4D117D0013A5F0 /* Constants.swift */; };
 		F7504A761E4D1DAF0013A5F0 /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7504A751E4D1DAF0013A5F0 /* KeyPair.swift */; };
 		F7504A7E1E4D21D60013A5F0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7504A7D1E4D21D60013A5F0 /* main.swift */; };
+		F76E04521E538C87003F605F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E04511E538C87003F605F /* AppDelegate.swift */; };
+		F76E04541E538C87003F605F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76E04531E538C87003F605F /* Assets.xcassets */; };
+		F76E04571E538C87003F605F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76E04551E538C87003F605F /* MainMenu.xib */; };
+		F76E046A1E538D67003F605F /* SwiftKeys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D4688E1E4CE721005F2494 /* SwiftKeys.framework */; };
+		F76E04731E538DEF003F605F /* P256Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E04721E538DEF003F605F /* P256Tests.swift */; };
+		F76E047B1E538F33003F605F /* SwiftKeysTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E047A1E538F33003F605F /* SwiftKeysTestCase.swift */; };
+		F7B288601E5395D000A1E64F /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2885F1E5395D000A1E64F /* RSA.swift */; };
+		F7B288621E539F9C00A1E64F /* RSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B288611E539F9C00A1E64F /* RSATests.swift */; };
 		F7D0A59D1E4D3DD400BF62B2 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0A59C1E4D3DD400BF62B2 /* Keychain.swift */; };
-		F7D0A59F1E4D4E5B00BF62B2 /* EC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0A59E1E4D4E5A00BF62B2 /* EC.swift */; };
 		F7D0A5A11E4E319A00BF62B2 /* P256.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0A5A01E4E319A00BF62B2 /* P256.swift */; };
-		F7D0A5A41E4E362200BF62B2 /* P256Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0A5A31E4E362200BF62B2 /* P256Tests.swift */; };
-		F7D0A5A61E4E367A00BF62B2 /* SwiftKeysTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0A5A51E4E367A00BF62B2 /* SwiftKeysTestCase.swift */; };
-		F7D468981E4CE721005F2494 /* SwiftKeys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D4688E1E4CE721005F2494 /* SwiftKeys.framework */; };
 		F7D4689F1E4CE721005F2494 /* SwiftKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = F7D468911E4CE721005F2494 /* SwiftKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7D468AA1E4CE867005F2494 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D468A91E4CE867005F2494 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F7D468991E4CE721005F2494 /* PBXContainerItemProxy */ = {
+		F76E04751E538DEF003F605F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F7D468851E4CE721005F2494 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F7D4688D1E4CE721005F2494;
-			remoteInfo = SwiftKeys;
+			remoteGlobalIDString = F76E044E1E538C87003F605F;
+			remoteInfo = TestApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -47,16 +51,23 @@
 		F7504A751E4D1DAF0013A5F0 /* KeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
 		F7504A7B1E4D21D60013A5F0 /* GenerateConstants */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GenerateConstants; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7504A7D1E4D21D60013A5F0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F76E044F1E538C87003F605F /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76E04511E538C87003F605F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F76E04531E538C87003F605F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F76E04561E538C87003F605F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F76E04581E538C87003F605F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76E046B1E538D90003F605F /* TestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestApp.entitlements; sourceTree = "<group>"; };
+		F76E04701E538DEF003F605F /* SwiftKeysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftKeysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76E04721E538DEF003F605F /* P256Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P256Tests.swift; sourceTree = "<group>"; };
+		F76E04741E538DEF003F605F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76E047A1E538F33003F605F /* SwiftKeysTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftKeysTestCase.swift; sourceTree = "<group>"; };
+		F7B2885F1E5395D000A1E64F /* RSA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSA.swift; sourceTree = "<group>"; };
+		F7B288611E539F9C00A1E64F /* RSATests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSATests.swift; sourceTree = "<group>"; };
 		F7D0A59C1E4D3DD400BF62B2 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
-		F7D0A59E1E4D4E5A00BF62B2 /* EC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EC.swift; sourceTree = "<group>"; };
 		F7D0A5A01E4E319A00BF62B2 /* P256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P256.swift; sourceTree = "<group>"; };
-		F7D0A5A31E4E362200BF62B2 /* P256Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P256Tests.swift; sourceTree = "<group>"; };
-		F7D0A5A51E4E367A00BF62B2 /* SwiftKeysTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftKeysTestCase.swift; sourceTree = "<group>"; };
 		F7D4688E1E4CE721005F2494 /* SwiftKeys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKeys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D468911E4CE721005F2494 /* SwiftKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftKeys.h; sourceTree = "<group>"; };
 		F7D468921E4CE721005F2494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7D468971E4CE721005F2494 /* SwiftKeysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftKeysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7D4689E1E4CE721005F2494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7D468A91E4CE867005F2494 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,18 +79,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7D4688A1E4CE721005F2494 /* Frameworks */ = {
+		F76E044C1E538C87003F605F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76E046A1E538D67003F605F /* SwiftKeys.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76E046D1E538DEF003F605F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7D468941E4CE721005F2494 /* Frameworks */ = {
+		F7D4688A1E4CE721005F2494 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7D468981E4CE721005F2494 /* SwiftKeys.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +112,29 @@
 			path = GenerateConstants;
 			sourceTree = "<group>";
 		};
+		F76E04501E538C87003F605F /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				F76E046B1E538D90003F605F /* TestApp.entitlements */,
+				F76E04511E538C87003F605F /* AppDelegate.swift */,
+				F76E04531E538C87003F605F /* Assets.xcassets */,
+				F76E04551E538C87003F605F /* MainMenu.xib */,
+				F76E04581E538C87003F605F /* Info.plist */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+		F76E04711E538DEF003F605F /* SwiftKeysTests */ = {
+			isa = PBXGroup;
+			children = (
+				F76E04721E538DEF003F605F /* P256Tests.swift */,
+				F7B288611E539F9C00A1E64F /* RSATests.swift */,
+				F76E047A1E538F33003F605F /* SwiftKeysTestCase.swift */,
+				F76E04741E538DEF003F605F /* Info.plist */,
+			);
+			path = SwiftKeysTests;
+			sourceTree = "<group>";
+		};
 		F7D0A5BB1E4E3E5800BF62B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,8 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				F7D468901E4CE721005F2494 /* SwiftKeys */,
-				F7D4689B1E4CE721005F2494 /* SwiftKeysTests */,
 				F7504A7C1E4D21D60013A5F0 /* GenerateConstants */,
+				F76E04501E538C87003F605F /* TestApp */,
+				F76E04711E538DEF003F605F /* SwiftKeysTests */,
 				F7D4688F1E4CE721005F2494 /* Products */,
 				F7D0A5BB1E4E3E5800BF62B2 /* Frameworks */,
 			);
@@ -116,8 +158,9 @@
 			isa = PBXGroup;
 			children = (
 				F7D4688E1E4CE721005F2494 /* SwiftKeys.framework */,
-				F7D468971E4CE721005F2494 /* SwiftKeysTests.xctest */,
 				F7504A7B1E4D21D60013A5F0 /* GenerateConstants */,
+				F76E044F1E538C87003F605F /* TestApp.app */,
+				F76E04701E538DEF003F605F /* SwiftKeysTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,8 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				F7504A751E4D1DAF0013A5F0 /* KeyPair.swift */,
-				F7D0A59E1E4D4E5A00BF62B2 /* EC.swift */,
 				F7D0A5A01E4E319A00BF62B2 /* P256.swift */,
+				F7B2885F1E5395D000A1E64F /* RSA.swift */,
 				F7504A491E4D117D0013A5F0 /* Constants.swift */,
 				F7D468A91E4CE867005F2494 /* Utils.swift */,
 				F7D0A59C1E4D3DD400BF62B2 /* Keychain.swift */,
@@ -135,16 +178,6 @@
 				F7D468921E4CE721005F2494 /* Info.plist */,
 			);
 			path = SwiftKeys;
-			sourceTree = "<group>";
-		};
-		F7D4689B1E4CE721005F2494 /* SwiftKeysTests */ = {
-			isa = PBXGroup;
-			children = (
-				F7D4689E1E4CE721005F2494 /* Info.plist */,
-				F7D0A5A31E4E362200BF62B2 /* P256Tests.swift */,
-				F7D0A5A51E4E367A00BF62B2 /* SwiftKeysTestCase.swift */,
-			);
-			path = SwiftKeysTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +211,41 @@
 			productReference = F7504A7B1E4D21D60013A5F0 /* GenerateConstants */;
 			productType = "com.apple.product-type.tool";
 		};
+		F76E044E1E538C87003F605F /* TestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76E04641E538C87003F605F /* Build configuration list for PBXNativeTarget "TestApp" */;
+			buildPhases = (
+				F76E044B1E538C87003F605F /* Sources */,
+				F76E044C1E538C87003F605F /* Frameworks */,
+				F76E044D1E538C87003F605F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestApp;
+			productName = TestApp;
+			productReference = F76E044F1E538C87003F605F /* TestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F76E046F1E538DEF003F605F /* SwiftKeysTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76E04771E538DEF003F605F /* Build configuration list for PBXNativeTarget "SwiftKeysTests" */;
+			buildPhases = (
+				F76E046C1E538DEF003F605F /* Sources */,
+				F76E046D1E538DEF003F605F /* Frameworks */,
+				F76E046E1E538DEF003F605F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76E04761E538DEF003F605F /* PBXTargetDependency */,
+			);
+			name = SwiftKeysTests;
+			productName = SwiftKeysTests;
+			productReference = F76E04701E538DEF003F605F /* SwiftKeysTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F7D4688D1E4CE721005F2494 /* SwiftKeys */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7D468A21E4CE721005F2494 /* Build configuration list for PBXNativeTarget "SwiftKeys" */;
@@ -196,24 +264,6 @@
 			productReference = F7D4688E1E4CE721005F2494 /* SwiftKeys.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F7D468961E4CE721005F2494 /* SwiftKeysTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F7D468A51E4CE721005F2494 /* Build configuration list for PBXNativeTarget "SwiftKeysTests" */;
-			buildPhases = (
-				F7D468931E4CE721005F2494 /* Sources */,
-				F7D468941E4CE721005F2494 /* Frameworks */,
-				F7D468951E4CE721005F2494 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F7D4689A1E4CE721005F2494 /* PBXTargetDependency */,
-			);
-			name = SwiftKeysTests;
-			productName = SwiftKeysTests;
-			productReference = F7D468971E4CE721005F2494 /* SwiftKeysTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -228,13 +278,23 @@
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
-					F7D4688D1E4CE721005F2494 = {
+					F76E044E1E538C87003F605F = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = S93FDAQ29M;
-						LastSwiftMigration = 0800;
+						DevelopmentTeam = VEKTX9H2N7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
-					F7D468961E4CE721005F2494 = {
+					F76E046F1E538DEF003F605F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VEKTX9H2N7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F76E044E1E538C87003F605F;
+					};
+					F7D4688D1E4CE721005F2494 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = S93FDAQ29M;
 						LastSwiftMigration = 0800;
@@ -256,21 +316,31 @@
 			projectRoot = "";
 			targets = (
 				F7D4688D1E4CE721005F2494 /* SwiftKeys */,
-				F7D468961E4CE721005F2494 /* SwiftKeysTests */,
 				F7504A7A1E4D21D60013A5F0 /* GenerateConstants */,
+				F76E044E1E538C87003F605F /* TestApp */,
+				F76E046F1E538DEF003F605F /* SwiftKeysTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F7D4688C1E4CE721005F2494 /* Resources */ = {
+		F76E044D1E538C87003F605F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76E04541E538C87003F605F /* Assets.xcassets in Resources */,
+				F76E04571E538C87003F605F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76E046E1E538DEF003F605F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7D468951E4CE721005F2494 /* Resources */ = {
+		F7D4688C1E4CE721005F2494 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,6 +358,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F76E044B1E538C87003F605F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76E04521E538C87003F605F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76E046C1E538DEF003F605F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B288621E539F9C00A1E64F /* RSATests.swift in Sources */,
+				F76E04731E538DEF003F605F /* P256Tests.swift in Sources */,
+				F76E047B1E538F33003F605F /* SwiftKeysTestCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7D468891E4CE721005F2494 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,30 +383,32 @@
 				F7D0A5A11E4E319A00BF62B2 /* P256.swift in Sources */,
 				F7504A761E4D1DAF0013A5F0 /* KeyPair.swift in Sources */,
 				F7D0A59D1E4D3DD400BF62B2 /* Keychain.swift in Sources */,
+				F7B288601E5395D000A1E64F /* RSA.swift in Sources */,
 				F7D468AA1E4CE867005F2494 /* Utils.swift in Sources */,
-				F7D0A59F1E4D4E5B00BF62B2 /* EC.swift in Sources */,
 				F7504A4A1E4D117D0013A5F0 /* Constants.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7D468931E4CE721005F2494 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7D0A5A41E4E362200BF62B2 /* P256Tests.swift in Sources */,
-				F7D0A5A61E4E367A00BF62B2 /* SwiftKeysTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F7D4689A1E4CE721005F2494 /* PBXTargetDependency */ = {
+		F76E04761E538DEF003F605F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F7D4688D1E4CE721005F2494 /* SwiftKeys */;
-			targetProxy = F7D468991E4CE721005F2494 /* PBXContainerItemProxy */;
+			target = F76E044E1E538C87003F605F /* TestApp */;
+			targetProxy = F76E04751E538DEF003F605F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F76E04551E538C87003F605F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76E04561E538C87003F605F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F7504A801E4D21D60013A5F0 /* Debug */ = {
@@ -334,6 +424,70 @@
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F76E04651E538C87003F605F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestApp/TestApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VEKTX9H2N7;
+				INFOPLIST_FILE = TestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.TestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F76E04661E538C87003F605F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestApp/TestApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VEKTX9H2N7;
+				INFOPLIST_FILE = TestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.TestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F76E04781E538DEF003F605F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VEKTX9H2N7;
+				INFOPLIST_FILE = SwiftKeysTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.SwiftKeysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/Contents/MacOS/TestApp";
+			};
+			name = Debug;
+		};
+		F76E04791E538DEF003F605F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VEKTX9H2N7;
+				INFOPLIST_FILE = SwiftKeysTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.SwiftKeysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/Contents/MacOS/TestApp";
 			};
 			name = Release;
 		};
@@ -478,39 +632,6 @@
 			};
 			name = Release;
 		};
-		F7D468A61E4CE721005F2494 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = S93FDAQ29M;
-				INFOPLIST_FILE = SwiftKeysTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.SwiftKeysTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		F7D468A71E4CE721005F2494 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = S93FDAQ29M;
-				INFOPLIST_FILE = SwiftKeysTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.SwiftKeysTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -519,6 +640,24 @@
 			buildConfigurations = (
 				F7504A801E4D21D60013A5F0 /* Debug */,
 				F7504A811E4D21D60013A5F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76E04641E538C87003F605F /* Build configuration list for PBXNativeTarget "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76E04651E538C87003F605F /* Debug */,
+				F76E04661E538C87003F605F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76E04771E538DEF003F605F /* Build configuration list for PBXNativeTarget "SwiftKeysTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76E04781E538DEF003F605F /* Debug */,
+				F76E04791E538DEF003F605F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -537,15 +676,6 @@
 			buildConfigurations = (
 				F7D468A31E4CE721005F2494 /* Debug */,
 				F7D468A41E4CE721005F2494 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F7D468A51E4CE721005F2494 /* Build configuration list for PBXNativeTarget "SwiftKeysTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F7D468A61E4CE721005F2494 /* Debug */,
-				F7D468A71E4CE721005F2494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

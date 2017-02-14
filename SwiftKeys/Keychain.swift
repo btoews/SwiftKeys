@@ -22,6 +22,9 @@ public class Keychain {
         }
     }
     
+    public static func count() -> Int? { return shared.count() }
+    public static func delete() -> Bool { return shared.delete() }
+    
     let label: String
     
     init(label: String) {
@@ -214,10 +217,10 @@ public class Keychain {
         return opaqueResult as! CFData as Data
     }
     
-    func getSecKey(attrAppLabel: Data, keyClass: SecAttrKeyClass) -> SecKey? {
+    func getSecKey(attrAppLabel: Data, keyType: SecAttrKeyType, keyClass: SecAttrKeyClass) -> SecKey? {
         let query = makeCFDictionary(
             (kSecClass, kSecClassKey),
-            (kSecAttrKeyType, kSecAttrKeyTypeEC),
+            (kSecAttrKeyType, keyType.rawValue as CFString),
             (kSecAttrKeyClass, keyClass.rawValue as CFString),
             (kSecAttrApplicationLabel, attrAppLabel as CFData),
             (kSecReturnRef, kCFBooleanTrue)
@@ -242,28 +245,27 @@ public class Keychain {
     }
     
     // Generate access control policy for key generation.
-    func generateACL(protection: SecAttrAccessible, rawFlags: UInt = 0) -> SecAccessControl? {
+    func generateACL(protection: SecAttrAccessible, flags: SecAccessControlCreateFlags) -> SecAccessControl? {
         var err: Unmanaged<CFError>? = nil
-        let flags = SecAccessControlCreateFlags.init(rawValue: rawFlags)
+        defer { err?.release() }
 
         let ret = SecAccessControlCreateWithFlags(nil, protection.rawValue as CFString, flags, &err)
         
         if err != nil {
             print("Error generating ACL for key generation: \(err!.takeRetainedValue().localizedDescription)")
-            err!.release()
             return nil
         }
         
         return ret
     }
     
-    func generateKeyPair(keyType: SecAttrKeyType, keySize: Int, isPermanent: Bool, acl: SecAccessControl) -> (SecKey, SecKey)? {
+    func generateKeyPair(keyType: SecAttrKeyType, keySize: Int, acl: SecAccessControl) -> (`public`: SecKey, `private`: SecKey)? {
         // Make parameters for generating keys.
         let params = makeCFDictionary(
             (kSecAttrKeyType, keyType.rawValue as CFString),
             (kSecAttrKeySizeInBits, keySize as CFNumber),
             (kSecAttrAccessControl, acl),
-            (kSecAttrIsPermanent, isPermanent as CFBoolean),
+            (kSecAttrIsPermanent, kCFBooleanTrue),
             (kSecAttrLabel, label as CFString)
         )
         

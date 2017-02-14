@@ -81,6 +81,7 @@ generateEnum([
   "kSecAttrSubject": kSecAttrSubject,
   "kSecAttrSubjectKeyID": kSecAttrSubjectKeyID,
   "kSecAttrType": kSecAttrType,
+  "kSecAttrTokenID": kSecAttrTokenID
 ])
 
 generateEnum([
